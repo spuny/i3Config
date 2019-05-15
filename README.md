@@ -1,3 +1,3 @@
-**MASTER** - Hopefuly working branch._\
+**MASTER** - Hopefuly working branch.
 
 Arch based configuration.
