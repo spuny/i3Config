@@ -108,7 +108,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Ctrl+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# restart i3 in-place (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
@@ -196,7 +196,7 @@ exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 for_window [class="Firefox"] move to workspace $ws10
 
 #audio multimedia keys volume
-# script volume.sh is useless since in status bar is notififcation
+# script volume.sh is useless since in status bar is notification
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer -i 2; /home/sniffer/bin/volume.sh"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer -d 2; /home/sniffer/bin/volume.sh"
 bindsym XF86AudioMute exec --no-startup-id "pamixer -t; /home/sniffer/bin/volume.sh"
@@ -207,7 +207,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #colors
-# class border backgr text separator
+# class border background text separator
 client.focused #e67905 #e67905 #ffffff #e67905
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused #333333 #333333 #888888 #292d2e
